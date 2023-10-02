@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    background-image: url("https://i.pinimg.com/736x/c4/b9/9f/c4b99f14b01f226901c473a398bf180f.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*******************************************************
+***********************Navegación***********************/
+header{
+    /* widht - ancho   height - alto*/
+    width: 100%;
+    height: 60%;
+}
+
+/* Acceder al elemento nav a traves de header */
+header nav {
+    display: flex; /* flex: Habilita propiedades, permite mover los objetos */
+    justify-content: flex-end; /* Justifica a la derecha */
+}
+
+header nav .nav-right-section{
+    /* width - ancho   height - alto y el valor auto es altura automatica */
+    width: auto;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    /* Justificar al centro acorde al elemento */
+    justify-content: center;
+    /* Centrando verticalmente*/
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Anclas dentro del nav para agregar espacio */
+nav .nav-right-section a{
+    color: rgba(0,0,0,.87); /* color del texto */
+    margin-right: 18px;
+}
+/* Ícono del Menú */
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuario */
+nav .nav-right-section img{
+    /* Redondeado de bordes */
+    border-radius: 100%;
+    width: 35px;
+    margin-left: 20px;
+}
+
+/*******************************************************
+**************************Main*************************/
+
+main {
+    margin-top: 200px;
+    /*Centrar elementos*/
+    text-align: center;
+}
+
+main .main-logo{
+    width: 50%;
+    margin-bottom: 40px;
+    /* Vertical // Horizontal*/
+    /* Centrado absoluto gracias a los margenes automaticos */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    background-color: white;
+}
+
+main .main-input input{
+    height: 35px;
+    border: none;
+    /* outline quita el contorno al accionar click */
+    outline: none;
+    width: 420px;
+}
+
+/* Efecto hover (sombra) al poner el mouse sin accionar*/
+main .main-input-container:hover {
+    border-color: #dfe1e500;
+    /* 0 -> desplazamiento horizontal 
+      1px -> desplazamiento vertical
+      6px -> desenfoque
+      0 -> expansión de la sombra*/
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    /* Propiedad para que no se repita la img */
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    padding-left: 12px;
+    margin-right: 12px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 14px;
+    height: 14px;
+    padding-left: 6%;
+    background-position: center;
+    background-size: contain; /* Estar contenido */
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    padding-right: 3%; /* Margen hacia dentro */
+    margin-left: 5px;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    /* inline // inline block los pone en una sola linea*/
+    display: inline-block;
+}
+
+main .main-buttons button {
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043; /* color de la letra*/
+    border-radius: 5px;
+    /* primer numero da espacio de arriba y abajo, segundo numero entre los lados*/
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px 0 #20212447;
+    border: 1px solid #dadce0;
+    color:#202124;
+}
+
+/*******************************************************
+**************************Footer*************************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+footer section {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    color: #4f5255;
+    font-size: 115%;
+}
+footer section.more-info {
+    border-top:rgba(126, 124, 124, 0.87) solid 0.5px;
+    display: flex;
+    justify-content: space-between;
+}
+footer section.more-info div {
+    display: flex;
+    gap: 20px;
+}
+footer section.more-info div a {
+    color: #4f5255;
+    text-decoration: none;
+}
