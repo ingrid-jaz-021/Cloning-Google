@@ -114,6 +114,11 @@ main .main-input-container:hover {
       6px -> desenfoque
       0 -> expansión de la sombra*/
     box-shadow: 0 1px 6px 0 #20212447;
+    background-color: #fcd5ce;
+}
+
+main .main-input-text:hover{
+    background-color: #fcd5ce;
 }
 
 main .main-input .search-icon {
@@ -176,6 +181,7 @@ main .main-buttons button:hover{
     box-shadow: 0 1px 1px 0 #20212447;
     border: 1px solid #dadce0;
     color:#202124;
+    background-color: #fcd5ce;
 }
 
 /*******************************************************
